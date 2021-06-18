@@ -1,0 +1,415 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Arial Bold;
+}
+
+body {
+	background-image: url(book1.jpg);
+	transition: 0.9s ease;
+}
+
+ul {
+	float: right;
+}
+
+ul li {
+	display: inline-block;
+	padding: 10px;
+	margin-right: 20px;
+	margin-top: 20px;
+}
+
+ul li a {
+	text-decoration: none;
+	position: relative;
+	color: yellow;
+	font-size: 30px;
+	display: block;
+	overflow: hidden;
+	padding: 10px 10px;
+}
+
+ul li a:before {
+	content: '';
+	width: 40px;
+	position: absolute;
+	border-bottom: 5px solid #66ffff;
+	right: 350px;
+	transition: 0.2s all;
+}
+
+ul li a:hover:before {
+	right: 0;
+}
+
+.title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-80%, -20%);
+}
+
+.title h1 {
+	color: blue;
+	font-size: 80px;
+}
+
+.button {
+	position: absolute;
+	top: 62%;
+	left: 55%;
+	transform: translate(-50%, -50%);
+}
+
+p {
+	position: absolute;
+	top: 75%;
+	left: 57%;
+	transform: translate(-50%, -50%);
+	color: red;
+	transition: 0.9s ease;
+
+}
+
+.btn {
+	background: none;
+	outline: none;
+	border: 5px solid #66ffff;
+	border-radius: 20px;
+	padding: 10px 30px;
+	color: black;
+	font-size: 40px;
+	text-decoration: none;
+	transition: 0.7s ease;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background-color: #66ffff;
+}
+
+.form-adjust {
+	text-transform: uppercase;
+	width: 550px;
+	height: 70%;
+	background: white;
+	position: absolute;
+	margin-top: 28px;
+	top: 51%;
+	left: 77%;
+	transform: translate(-50%, -50%);
+	border-radius: 5px;
+	transition: 1s all;
+	border: 1px solid #e818e8;
+	display: none;
+}
+
+input {
+	text-transform: lowercase;
+	float: left;
+	margin-bottom:20px;
+	position: relative;
+	border: none;
+	outline: none;
+	background: none;
+	padding: 5px 5px;
+	font-size: 15px;
+	border-bottom: 1px solid #18e8da;
+	margin-bottom: 40px;
+}
+
+form {
+	margin-top: 35px;
+	margin-left: 32px;
+	margin-right: 20px;
+}
+
+.name {
+	width: 30.3%;
+}
+
+.address {
+	width: 61%;
+}
+
+.gender, .age {
+	width: 15%;
+}
+
+.email {
+	width: 52%;
+
+}
+
+.form-adjust form button {
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	outline: none;
+	background: #18a6e8;
+	border: 1px solid #53e818;
+	border-radius: 30px;
+	padding: 10px 20px;
+	color: blue;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+.form-adjust form button:hover{
+	background-color:#18e5e8;
+}
+
+.form-adjust h1 {
+	margin-top: 25px;
+	font-size: 20px;
+}
+
+.point {
+	width: 20px;
+	height: 20px;
+	background: white;
+	position: absolute;
+	top: 60%;
+	left: 55%;
+	transform: translate(-50%, -50%);
+	transform: rotate(45deg);
+	display: none;
+}
+
+.form-adjust1 {
+	left: 35%;
+}
+
+.active {
+	color: #18e5e8;
+}
+
+.displayDiv {
+	color: blue;
+	text-transform: uppercase;
+	width: 50%;
+	height: 70%;
+	background: none;
+	border-radius: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.displayDiv table {
+	position: relative;
+	text-align: center;
+	width: 100%;
+}
+
+.displayDiv table thead {
+	background: black;
+	color: yellow;
+	margin-bottom: 10px;
+}
+ 
+.displayDiv table thead tr td{
+	padding: 10px;
+} 
+
+.displayDiv tbody {
+	font-size: 15px;
+	margin: 0px 20px;
+}
+
+tbody tr td{
+	padding: 15px;
+}
+
+tbody tr:hover{
+	color: green;
+	cursor: pointer;
+}
+
+.cancelButton {
+	border: none;
+	float: right;
+	padding: 5px 10px;
+	border-radius: 30px;
+	background: #333;
+	color: white;
+	outline: none;
+	cursor: pointer;
+}
+
+.cancelButton:hover {
+	background: #e84118;
+	color: black;
+}
+
+.cancelButtonDiv3 {
+	border: none;
+	float: right;
+	padding: 5px 10px;
+	border-radius: 30px;
+	background: #333;
+	color: white;
+	outline: none;
+	cursor: pointer;
+}
+
+.cancelButtonDiv3:hover{
+	background: #e84118;
+	color: black;
+}
+
+#div2 {
+	cursor: pointer;
+}
+
+#buttonEdit {
+	position: absolute;
+}
+
+#btonEdit {
+	outline: none;
+	background: #333;
+	border: 1px solid #e84118;
+	border-radius: 30px;
+	padding: 10px 20px;
+	color: white;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+#btonRemove {
+	outline: none;
+	background: #333;
+	border: 1px solid #e84118;
+	border-radius: 30px;
+	padding: 10px 20px;
+	color: white;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+#btonEdit:hover {
+	background-color: #e84118;
+}
+
+#btonRemove:hover {
+	background-color: #e84118;
+}
+
+#saveChanges {
+	outline: none;
+	background: #333;
+	border: 1px solid #e84118;
+	border-radius: 30px;
+	padding: 10px 20px;
+	color: white;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+#saveChanges:hover {
+	background-color: #e84118;
+}
+
+.search input {
+	color: blue;
+	margin-top: 25px;
+	margin-left: 25px;
+	width: 220px;
+}
+
+h3 {
+	font-size: 30px;
+	margin-top: 25px;
+	margin-right: 25px;
+	float: right;
+}
+
+.forLabel {
+	display: none;
+	text-transform: lowercase;
+	color: black;
+	width: 550px;
+	position: absolute;
+	margin-top: 28px;
+	top: 48%;
+	left: 77%;
+	transform: translate(-50%, -50%);
+	border-radius: 5px;
+	transition: 1s all;
+}
+
+.forLabel input {
+	float: left;
+	margin-bottom:20px;
+	position: relative;
+	border: none;
+	outline: none;
+	background: none;
+	padding: 5px 5px;
+	font-size: 10px;
+	margin-bottom: 48px;
+}
+
+.form-adjust3 {
+	text-transform: uppercase;
+	width: 550px;
+	height: 70%;
+	background: none;
+	position: absolute;
+	margin-top: 28px;
+	top: 51%;
+	left: 77%;
+	transform: translate(-50%, -50%);
+	border-radius: 5px;
+	transition: 1s all;
+	border: 1px solid #17e6e8;
+}
+
+.form-adjust3 h1 {
+	margin-top: 25px;
+	font-size: 20px;
+}
+
+.forLabelEdit {
+	width: 550px;
+	height: 70%;
+	display: none;
+	text-transform: lowercase;
+	color: gray;
+	background: white;
+	width: 550px;
+	position: absolute;
+	margin-top: 28px;
+	top: 51%;
+	left: 77%;
+	transform: translate(-50%, -50%);
+	border-radius: 5px;
+	transition: 1s all;
+}
+
+.forLabelEdit form {
+	margin-top: 13.5%;
+}
+
+.forLabelEdit input {
+	float: left;
+	margin-bottom:20px;
+	position: relative;
+	border: none;
+	outline: none;
+	background: none;
+	padding: 5px 5px;
+	font-size: 10px;
+	margin-bottom: 48px;
+}
+
+.active {
+	color: yellow;
+}
+
+
+
